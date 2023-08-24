@@ -1,0 +1,7 @@
+name: islp
+dependencies:
+  - python
+  - pip
+  - ipykernel
+  - pip:
+      - islp==1.2
