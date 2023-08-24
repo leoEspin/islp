@@ -4,4 +4,4 @@ dependencies:
   - pip
   - ipykernel
   - pip:
-      - islp==1.2
+      - islp
