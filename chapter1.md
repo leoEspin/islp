@@ -7,7 +7,7 @@
     1. regression (for CEO salary). this is an inference problem. `n=500`, `p=3`
     2. classification/prediction.  `n=20`, `p=13`
     3. regression. `n=52` weeks, `p=3`
-7. lambda for quick euclideant distance calculation
+7. lambda for quick euclidean distance calculation
     ```python
     import math
     euclid = lambda x,y : math.sqrt(sum([(x[i] - y[i])**2 for i in range(min(len(x), len(y)))]))
