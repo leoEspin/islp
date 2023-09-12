@@ -7,8 +7,23 @@
     1. regression (for CEO salary). this is an inference problem. `n=500`, `p=3`
     2. classification/prediction.  `n=20`, `p=13`
     3. regression. `n=52` weeks, `p=3`
+  
+.
+
 7. lambda for quick euclidean distance calculation
     ```python
     import math
     euclid = lambda x,y : math.sqrt(sum([(x[i] - y[i])**2 for i in range(min(len(x), len(y)))]))
     ```
+8. code downloading data from book's website
+   ```python
+    out = requests.get(
+        'https://www.statlearning.com/s/College.csv',
+        headers={
+            'accept': 'application/json'
+        },
+        verify=False
+    )
+    with open(out.headers['Content-Disposition'].rsplit('filename=')[-1].split(';')[0].replace('"',''), 'w') as f:
+        f.write(out.content)
+   ```
