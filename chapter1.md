@@ -15,7 +15,7 @@
     import math
     euclid = lambda x,y : math.sqrt(sum([(x[i] - y[i])**2 for i in range(min(len(x), len(y)))]))
     ```
-8. code downloading data from book's website
+8. code for downloading data from book's website
    ```python
     out = requests.get(
         'https://www.statlearning.com/s/College.csv',
