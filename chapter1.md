@@ -15,15 +15,5 @@
     import math
     euclid = lambda x,y : math.sqrt(sum([(x[i] - y[i])**2 for i in range(min(len(x), len(y)))]))
     ```
-8. code for downloading data from book's website
-   ```python
-    out = requests.get(
-        'https://www.statlearning.com/s/College.csv',
-        headers={
-            'accept': 'application/json'
-        },
-        verify=False
-    )
-    with open(out.headers['Content-Disposition'].rsplit('filename=')[-1].split(';')[0].replace('"',''), 'w') as f:
-        f.write(out.content)
-   ```
+
+[Question 8 and onward, see here](chapter1.ipynb).
